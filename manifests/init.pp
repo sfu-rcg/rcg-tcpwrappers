@@ -69,7 +69,7 @@ class tcpwrappers
 	}
 
 	# Make sure the package is installed
-	package { '$tcpwrappers::params::packageName':
+	package { "$tcpwrappers::params::packageName":
 		ensure	=> present,
 		before	=> Concat[ $tcpwrappers::params::allowPath, $tcpwrappers::params::denyPath ],
 	}
