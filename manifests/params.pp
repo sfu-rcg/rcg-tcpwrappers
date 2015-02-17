@@ -2,7 +2,7 @@ class tcpwrappers::params {
 
   case $::operatingsystem {
     'RedHat', 'CentOS', 'Scientific', 'OracleLinux', 'OEL': {
-      $packageName	= "tcpd"
+      $packageName	= "setup"
     }
     default: {
       fail('$::operatingsystem is not supported')
